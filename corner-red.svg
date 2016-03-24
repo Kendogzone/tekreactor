@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="265px" height="256px" viewBox="0 0 265 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="20.9451449%" y1="-16.9267293%" x2="32.7707734%" y2="87.2942431%" id="linearGradient-1">
+            <stop stop-color="#FF3868" offset="0%"></stop>
+            <stop stop-color="#E0182D" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.678431373   0 0 0 0 0.0823529412   0 0 0 0 0.17254902  0 0 0 0.42 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="75.6425268%" y1="34.9211906%" x2="21.8881866%" y2="9.42354187%" id="linearGradient-3">
+            <stop stop-color="#FF3868" offset="0%"></stop>
+            <stop stop-color="#E0182C" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.678431373   0 0 0 0 0.0823529412   0 0 0 0 0.17254902  0 0 0 0.42 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="11.778492%" y1="76.346639%" x2="71.8701032%" y2="19.3668563%" id="linearGradient-5">
+            <stop stop-color="#E0192D" offset="0%"></stop>
+            <stop stop-color="#FF3868" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.678431373   0 0 0 0 0.0823529412   0 0 0 0 0.17254902  0 0 0 0.42 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="GO-FOR-GOLD-jigga">
+            <g id="Group">
+                <path d="M0,113.743498 L0,0 L102.96679,67.2982362 L0,113.743498 Z" id="Triangle-1" fill="url(#linearGradient-1)" filter="url(#filter-2)"></path>
+                <path d="M102.96679,67.2982362 L0,0 L256,0 L102.96679,67.2982362 Z" id="Triangle-1-Copy-5" fill="url(#linearGradient-3)" filter="url(#filter-4)"></path>
+                <path d="M0,248.536614 L0,113.743498 L102.96679,67.2982362 L0,248.536614 Z" id="Triangle-1-Copy-2" fill="url(#linearGradient-5)" filter="url(#filter-6)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
