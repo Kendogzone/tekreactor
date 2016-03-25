@@ -120,15 +120,30 @@ li{
 	justify-content: center;
 }
 
-.logo-mobile{
+.logo{
+	display: block;
 	height: 90px;
 	margin-top: 18vh;
+}
+
+.logo-m{
+	display: flex;
+	justify-content: center;
+}
+
+.logo-d{
+	display: none;
+}
+
+.logo-mobile{
+	height: 90px;
+	margin-top: 30vh;
+
 }
 
 .logo-desktop{
 	height: 50px;
 	margin-top: 30vh;
-	display: none;
 }
 
 .tagline{
@@ -136,6 +151,34 @@ li{
 	text-align: center;
 	margin-top: 5vh;
 }
+
+@media (min-width: 750px) {
+	.corner-red{
+		height:28vh;
+		width: auto;
+	}
+
+	.corner-green{
+		height:28vh;
+		width: auto;
+	}
+
+	.corner-yellow{
+		height:32vh;
+		width: auto;
+	}
+
+	.logo-m{
+		display: none;
+	}
+
+	.logo-d{
+		display: flex;
+		justify-content: center;
+	}
+}
+
+/* --------------- fucking nav bar -------------- */
 
 .navbar{
 	width: 100%;
@@ -150,8 +193,8 @@ li{
 	margin: 0px 10px;
 	padding: 10px;
 	color: #A9A9A9;
-	-webkit-transition: color 0.5s; /* Safari */
-  transition: color 0.5s;
+	-webkit-transition: color 0.2s; /* Safari */
+  transition: color 0.2s;
 }
 
 .about{
@@ -171,14 +214,17 @@ li{
 
 .aboutbar{
 	width: 50px;
+	opacity: 0;
 }
 
 .workbar{
 	width: 50px;
+	opacity: 0;
 }
 
 .contactbar{
 	width: 50px;
+	opacity: 0;
 }
 
 .about:hover{
@@ -189,31 +235,13 @@ li{
 	color: #414141;
 }
 
-.about:hover{
+.contact:hover{
 	color: #414141;
 }
 
 @media (min-width: 750px) {
-	.corner-red{
-		height:28vh;
-		width: auto;
+	.navitem{
+		margin: 0 20px;
 	}
 
-	.corner-green{
-		height:28vh;
-		width: auto;
-	}
-
-	.corner-yellow{
-		height:32vh;
-		width: auto;
-	}
-
-	.logo-mobile{
-		display: none;
-	}
-
-	.logo-desktop{
-		display: block;
-	}
 }

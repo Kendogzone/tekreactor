@@ -1,8 +1,20 @@
 var main = function() {
-  $('.tagline').click(function() {
-    $('.logo'),animate(){
-    left: '0px'
-    }, 200;
+  $(".about").hover(function() {
+    $(".aboutbar").fadeTo(200,1);
+  },function(){
+    $(".aboutbar").fadeTo(200,0);
+  });
+
+  $(".work").hover(function() {
+    $(".workbar").fadeTo(200,1);
+  },function(){
+    $(".workbar").fadeTo(200,0);
+  });
+
+  $(".contact").hover(function() {
+    $(".contactbar").fadeTo(200,1);
+  },function(){
+    $(".contactbar").fadeTo(200,0);
   });
 };
 
@@ -45,4 +57,4 @@ transition: (data, popping) -> //this is the animation shit
 			$('.corner-pic').last().one 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', ->
 				$('.corner-pic').attr('style', '')
 				$('.corner-pic').css 'z-index', '2'
-	Pages.animating = true
+	Pages.animating = true*/
