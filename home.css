@@ -123,21 +123,22 @@ li{
 .logo-m{
 	display: flex;
 	justify-content: center;
+	height: 90px;
+	margin-top: 30vh;
 }
 
 .logo-d{
 	display: none;
+	height: 50px;
+	margin-top: 30vh;
 }
 
 .logo-mobile{
 	height: 90px;
-	margin-top: 30vh;
-
 }
 
 .logo-desktop{
 	height: 50px;
-	margin-top: 30vh;
 }
 
 .tagline{
