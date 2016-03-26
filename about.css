@@ -187,7 +187,7 @@ p{
 }
 
 .about{
-	color: #EB2342;
+	color: #414141;
 	display: block;
 }
 
@@ -203,7 +203,7 @@ p{
 
 .aboutbarcurrent{
 	width: 50px;
-	opacity: 0;
+	opacity: 1;
 }
 
 .workbar{
@@ -230,7 +230,7 @@ p{
 	}
 
 	.navbar{
-		bottom: 15vh;
+		bottom: 10vh;
 	}
 
 }
