@@ -1,0 +1,55 @@
+@import url("global.css");
+
+.logo-i{
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+	top: 2vh;
+	right: 4vw;
+}
+
+.logo-icon{
+	height: 26px;
+}
+
+@media (min-width: 750px) {
+	.logo-i{
+		top: 5vh;
+		right: 3vw;
+	}
+
+	.logo-icon{
+		height: 30px;
+	}
+}
+
+/* --------------- contact -------------- */
+
+.heythere{
+	font-family: body-weight;
+	margin-bottom: 40px;
+	text-align: center;
+	margin-top: 10vh;
+}
+
+.emails{
+	text-align: center;
+}
+
+#name{
+}
+
+#email{
+	margin-bottom: 20px;
+}
+
+
+
+
+@media (min-width: 750px) {
+
+	.heythere{
+		font-size: 26px;
+	}
+
+}

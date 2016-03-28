@@ -1,9 +1,19 @@
 var main = function() {
-  $(".about").hover(function() {
+
+};
+
+$(document).ready(main);
+
+
+//------------This was for the navbar hover action-------
+/*  $(".about").on("mouseover", function() {
     $(".aboutbar").fadeTo(200,1);
-  },function(){
+  });
+  $(".about").on("mouseleave", function() {
     $(".aboutbar").fadeTo(200,0);
   });
+
+
 
   $(".work").hover(function() {
     $(".workbar").fadeTo(200,1);
@@ -15,12 +25,7 @@ var main = function() {
     $(".contactbar").fadeTo(200,1);
   },function(){
     $(".contactbar").fadeTo(200,0);
-  });
-};
-
-$(document).ready(main);
-
-
+  }); */
 
 
 

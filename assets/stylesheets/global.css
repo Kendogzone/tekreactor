@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
 
 body{
 	width: 100%;
+
 }
 
 ul{
@@ -40,23 +41,23 @@ li{
 }
 
 @font-face {
-    font-family: body-weight;
-    src: url(assets/fonts/Brandon_light.otf);
+    font-family: reg-weight;
+    src: url(../fonts/Brandon_light.otf);
 }
 
 @font-face {
     font-family: title-weight;
-    src: url(assets/fonts/Brandon_bld.otf);
+    src: url(../fonts/Brandon_bld.otf);
 }
 
 @font-face {
     font-family: girth-weight;
-    src: url(assets/fonts/Brandon_blk.otf);
+    src: url(../fonts/Brandon_blk.otf);
 }
 
 @font-face {
-    font-family: reg-weight;
-    src: url(assets/fonts/Brandon_reg.otf);
+    font-family: body-weight;
+    src: url(../fonts/Brandon_reg.otf);
 }
 
 
@@ -80,10 +81,6 @@ li{
 	font-size: 20px;
 }
 
-p{
-	font-size: 20px;
-}
-
 .grey {
 	color: #414141;
 }
@@ -92,27 +89,34 @@ p{
 	color: #A9A9A9;
 }
 
+.blue {
+	color: #0065FF;
+}
+
 /* --------------- Home -------------- */
 
 .corner-red{
-	width: 32vw;
+	width: 25vw;
 	position: fixed;
 	top: 0;
 	left: 0;
+	pointer-events: none;
 }
 
 .corner-green{
-	width: 32vw;
+	width: 25vw;
 	position: fixed;
 	bottom: 0;
 	left: 0;
+	pointer-events: none;
 }
 
 .corner-yellow{
-	width: 32vw;
+	width: 25vw;
 	position: fixed;
 	bottom: 0;
 	right: 0;
+	pointer-events: none;
 }
 
 .section-1{
@@ -121,51 +125,29 @@ p{
 	width: 100%;
 	height: 100%;
 	justify-content: center;
-	padding: 40px 30px 0px 30px;
+	padding: 16vh 8vw;
 }
 
-@media (min-width: 750px) {
-	.section-1{
-		padding: 0px 15vw;
-	}
-}
-
-.logo-i{
-	display: flex;
-	justify-content: flex-end;
-	position: fixed;
-	top: 2vh;
-	right: 4vw;
-}
-
-.logo-icon{
-	height: 26px;
-}
-
-@media (min-width: 750px) {
+@media (min-width: 750px) and (-webkit-min-device-pixel-ratio: 2){
 	.corner-red{
-		height:28vh;
+		height:25vh;
 		width: auto;
 	}
 
 	.corner-green{
-		height:28vh;
+		height:25vh;
 		width: auto;
 	}
 
 	.corner-yellow{
-		height:32vh;
+		height:29vh;
 		width: auto;
 	}
 
-	.logo-i{
-		top: 5vh;
-		right: 3vw;
+	.section-1{
+		padding: 16vh 15vw;
 	}
 
-	.logo-icon{
-		height: 30px;
-	}
 }
 
 /* --------------- fucking nav bar -------------- */
@@ -175,171 +157,49 @@ p{
 	height: 44px;
 	text-align: center;
 	position: fixed;
-	bottom: 10vh;
+	bottom: 7vh;
 }
 
 .navitem{
-	margin: 0px 10px;
 	padding: 10px;
 	color: #A9A9A9;
 	-webkit-transition: color 0.2s; /* Safari */
   transition: color 0.2s;
+	margin: 0 3vw;
 }
 
-.about{
+.about, .work, .contact{
+	color: #A9A9A9;
+	display: block;
+}
+
+
+.about:hover, .work:hover, .contact:hover{
 	color: #414141;
-	display: block;
 }
 
-.work{
-	color: #A9A9A9;
-	display: block;
-}
 
-.contact{
-	color: #A9A9A9;
-	display: block;
-}
-
-.aboutbarcurrent{
+.aboutbar, .workbar, .contactbar{
 	width: 50px;
+	opacity: 0;
+	-webkit-transition: opacity 0.2s; /* Safari */
+	transition: opacity 0.2s;
+}
+
+.about:hover + .aboutbar, .work:hover + .workbar, .contact:hover + .contactbar{
 	opacity: 1;
 }
 
-.workbar{
+.aboutbarcurrent, .workbarcurrent, .contactbarcurrent{
 	width: 50px;
-	opacity: 0;
-}
 
-.contactbar{
-	width: 50px;
-	opacity: 0;
-}
-
-.work:hover{
-	color: #414141;
-}
-
-.contact:hover{
-	color: #414141;
 }
 
 @media (min-width: 750px) {
-	.navitem{
+	.navitem {
 		margin: 0 20px;
 	}
-
 	.navbar{
-		bottom: 10vh;
+		bottom: 7vh;
 	}
-
-}
-
-/* --------------- About -------------- */
-
-.team{
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-}
-
-.travis{
-	width: 100%;
-}
-
-.name-box{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-}
-
-.profile-pic{
-	width: 80px;
-	margin-top: 80px;
-}
-
-.name{
-	font-size: 26px;
-	font-family: title-weight;
-	margin-top: 20px;
-}
-
-.skill{
-	font-size: 20px;
-	font-family: body-weight;
-}
-
-.blurb{
-	font-family: body-weight;
-	margin-top: 20px;
-}
-
-.education-title{
-	font-size: 20px;
-	font-family: title-weight;
-	margin-top: 20px;
-}
-
-.education{
-	font-family: body-weight;
-	margin-top: 10px;
-}
-
-.career-title{
-	font-size: 20px;
-	font-family: title-weight;
-	margin-top: 20px;
-}
-
-.career{
-	font-family: body-weight;
-	margin-top: 10px;
-}
-
-
-@media (min-width: 750px) {
-	.team{
-		flex-direction: row;
-	}
-	.travis{
-		width: 50%;
-		margin-right: 40px;
-	}
-	.ken{
-		width: 50%;
-		margin-left: 40px;
-	}
-	.name-box{
-	}
-
-	.profile-pic{
-	}
-
-	.name{
-	}
-
-	.skill{
-	}
-
-	.blurb{
-	}
-
-	.education-title{
-	}
-
-	.education{
-	}
-
-	.career-title{
-	}
-
-	.career{
-	}
-
-	p{
-		font-size: 18px;
-	}
-
-
 }

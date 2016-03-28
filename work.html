@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact</title>
-  <link rel="stylesheet" type="text/css" href="assets/stylesheets/contact.css">
+  <title>Work</title>
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/work.css">
   <link rel="shortcut icon" type="image/png" href="assets/favicon.png"/>
 </head>
 
@@ -17,24 +17,23 @@
       <img src="assets/icon.svg" alt="logo-icon" class="logo-icon" >
     </a>
 
-    <div class="body-size body-weight heythere grey">
-      If you’re looking to build a bold presence or impactful product, give us a shout and we’d love to talk!
-    </div>
-    <div class="emails">
-      <div id="name" class="body-size title-weight grey">
-        Travis Wu
-      </div>
-      <div id="email" class="body-size body-weight blue">
-        travis.wu.bmc@gmail.com
-      </div>
-      <div id="name" class="body-size title-weight grey">
-        Kenneth Hsia
-      </div>
-      <div id="email" class="body-size body-weight blue">
-        2527hk@gmail.com
-      </div>
+    <a href="#openModal">
+      <img src="assets/cliqthumbnail.png" alt="cliqshowcase" class="cliqthumbnail">
+    </a>
+    <div id="openModal" class="modalDialog">
+      <img src="assets/cliqshowcase.png" alt="cliqshowcase" class="cliqshowcase">
+      <a href="#close" title="Close" class="close">X</a>
     </div>
 
+    <a href="#openModal">Open Modal</a>
+    <div id="openModal" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Modal Box</h2>
+        <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+        <p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+      </div>
+    </div>
 
   </div>
 
@@ -47,10 +46,10 @@
       </li>
       <li>
         <a class="work navitem body-size body-weight" href="work.html">Work</a>
-        <img src="assets/workbar.svg" alt="workbar" class="workbar">
+        <img src="assets/workbar.svg" alt="workbar" class="workbarcurrent">
       </li>
       <li><a class="contact navitem body-size body-weight" href="contact.html">Contact</a>
-        <img src="assets/contactbar.svg" alt="contact" class="contactbarcurrent">
+        <img src="assets/contactbar.svg" alt="contact" class="contactbar">
       </li>
     </ul>
   </div>

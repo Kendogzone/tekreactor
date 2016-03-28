@@ -1,0 +1,40 @@
+@import url("global.css");
+
+.logo-m{
+	display: flex;
+	justify-content: center;
+	height: 90px;
+	margin-top: 30vh;
+}
+
+.logo-d{
+	display: none;
+	height: 50px;
+	margin-top: 30vh;
+}
+
+.logo-mobile{
+	height: 90px;
+}
+
+.logo-desktop{
+	height: 50px;
+}
+
+.tagline{
+	width: 100%;
+	text-align: center;
+	margin-top: 5vh;
+}
+
+@media (min-width: 750px) and (-webkit-min-device-pixel-ratio: 2){
+
+	.logo-m{
+		display: none;
+	}
+
+	.logo-d{
+		display: flex;
+		justify-content: center;
+	}
+}
