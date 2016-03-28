@@ -4,13 +4,13 @@
 	display: flex;
 	justify-content: center;
 	height: 90px;
-	margin-top: 30vh;
+	margin-top: 10vh;
 }
 
 .logo-d{
 	display: none;
 	height: 50px;
-	margin-top: 30vh;
+	margin-top: 20vh;
 }
 
 .logo-mobile{
@@ -37,4 +37,8 @@
 		display: flex;
 		justify-content: center;
 	}
+
+	.tagline{
+		margin-top: 5vh;
+		font-size: 26px;
 }
