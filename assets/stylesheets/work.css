@@ -31,7 +31,7 @@
 }
 
 .project-thumbnail{
-	width: 20vw;
+	width: 100%;
 	height: auto;
 }
 
@@ -43,38 +43,72 @@
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.7);
 	line-height: normal;
-	opacity: 0;
-	display: flex;
+	opacity: 1;
 	justify-content: center;
 	align-items: center;
 	-webkit-transition: opacity 0.2s ease-in-out; /* Safari */
 	-moz-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
+	display: flex;
 }
 
-.thumbnailcover:hover{
-	opacity: 1;
+#work-item{
+	margin: 20px 0px;
 }
+
+@media (min-width: 750px) {
+	.project-thumbnail{
+		width: 20vw;
+	}
+
+	.thumbnailcover{
+		opacity: 0;
+	}
+
+	.thumbnailcover:hover{
+		opacity: 1;
+	}
+
+	#work-item{
+		margin: 0px;
+	}
+}
+
+
 
 /* --------------- modal general -------------- */
 
 .close {
-  background: #606061;
-  color: #FFFFFF;
-  line-height: 25px;
   position: fixed;
-  right: 20px;
-  text-align: center;
-  top: 20px;
-  width: 24px;
-  font-weight: bold;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+	height: auto;
 	z-index: 4;
-}
-.close:hover {
-  background: #00d9ff;
+	line-height: 0;
 }
 
-/* --------------- project 1-------------- */
+.close-icon{
+	width: 100%;
+	-webkit-transition: transform 200ms ease-in-out;
+	-moz-transition: transform 200ms ease-in-out;
+	transition: transform 200ms ease-in-out;
+}
+
+.close-icon:hover {
+	transform: rotate(180deg);
+}
+
+@media (min-width: 750px) {
+	.close {
+	  right: 40px;
+	  top: 40px;
+	  width: 40px;
+	}
+
+}
+
+/* --------------- projects-------------- */
 
 #project1, #project2, #project3 {
   position: absolute;
@@ -82,23 +116,26 @@
   top: 0;
 	width: 100%;
   z-index: 2;
-  -webkit-transition: opacity 400ms ease-in;
-  -moz-transition: opacity 400ms ease-in;
-  transition: opacity 400ms ease-in;
   pointer-events: none;
 	padding: 10vh 0;
 	display: none;
 	justify-content: center;
+
+	opacity: 0;
+	-webkit-transition: opacity 400ms ease-in-out;
+	-moz-transition: opacity 400ms ease-in-out;
+	transition: opacity 400ms ease-in-out;
 }
 
 #project1:target, #project2:target, #project3:target {
 	display: flex;
 	pointer-events: auto;
+	opacity: 1;
 }
 
 .cliqshowcase, .critiqshowcase, .gravityshowcase {
-  width: 80%;
-	height: 80%;
+  width: 90%;
+	height: 100%;
 	z-index: 3
 }
 
@@ -110,6 +147,14 @@
 	height: 100vh;
 	background: rgba(0, 0, 0, 0.6);
 	z-index: 1;
+}
+
+
+@media (min-width: 750px) {
+	.cliqshowcase, .critiqshowcase, .gravityshowcase {
+	  width: 80%;
+		height: 80%;
+
 }
 
 
@@ -156,9 +201,3 @@
 .close:hover {
     background: #00d9ff;
 }*/
-
-
-@media (min-width: 750px) {
-
-
-}
