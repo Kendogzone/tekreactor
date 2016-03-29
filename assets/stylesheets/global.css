@@ -134,7 +134,7 @@ li{
 /* --------------- corners + main container -------------- */
 
 .corner-red{
-	width: 25vw;
+	width: 55vw;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -143,7 +143,7 @@ li{
 }
 
 .corner-green{
-	width: 25vw;
+	width: 39vw;
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -175,17 +175,17 @@ li{
 
 @media (min-width: 750px) {
 	.corner-red {
-		height: 25vh;
+		height: 22vh;
 		width: auto;
 	}
 
 	.corner-green {
-		height: 25vh;
+		height: 28vh;
 		width: auto;
 	}
 
 	.corner-yellow {
-		height: 29vh;
+		height: 45vh;
 		width: auto;
 	}
 

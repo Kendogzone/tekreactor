@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="238px" height="288px" viewBox="0 0 238 288" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="199px" height="379px" viewBox="0 0 199 379" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
     <title>Group 4</title>
     <desc>Created with Sketch.</desc>
@@ -45,11 +45,11 @@
         </filter>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="GO-FOR-GOLD-jigga" transform="translate(-1042.000000, -512.000000)">
-            <g id="Group-4" transform="translate(1054.000000, 522.000000)">
-                <polygon id="Triangle-3" fill="url(#linearGradient-1)" filter="url(#filter-2)" points="139.076923 191.87451 226 278 0 278 "></polygon>
-                <path d="M226,143.905882 L226,277.998647 L139.076923,191.87451 L226,143.905882 Z" id="Triangle-4" fill="url(#linearGradient-3)" filter="url(#filter-4)"></path>
-                <path d="M226,0 L226,143.908882 L139.076923,191.87451 L226,0 Z" id="Triangle-4-Copy" fill="url(#linearGradient-5)" filter="url(#filter-6)"></path>
+        <g id="GO-FOR-GOLD-jigga" transform="translate(-1081.000000, -421.000000)">
+            <g id="Group-4" transform="translate(1092.000000, 429.000000)">
+                <polygon id="Triangle-3" fill="url(#linearGradient-1)" filter="url(#filter-2)" points="126.39548 299.788571 188 371 0.643828096 370.999998 "></polygon>
+                <path d="M188,228.477109 L188,370.998562 L126.39548,299.788571 L188,228.477109 Z" id="Triangle-4" fill="url(#linearGradient-3)" filter="url(#filter-4)"></path>
+                <path d="M188,0.0207108416 L188,228.480298 L126.39548,299.788571 L188,0.0207108416 Z" id="Triangle-4-Copy" fill="url(#linearGradient-5)" filter="url(#filter-6)"></path>
             </g>
         </g>
     </g>
