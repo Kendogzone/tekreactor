@@ -68,6 +68,7 @@
   top: 20px;
   width: 24px;
   font-weight: bold;
+	z-index: 4;
 }
 .close:hover {
   background: #00d9ff;
@@ -75,110 +76,42 @@
 
 /* --------------- project 1-------------- */
 
-#project1 {
-  position: fixed;
+#project1, #project2, #project3 {
+  position: absolute;
   font-family: Arial, Helvetica, sans-serif;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 99998;
+	width: 100%;
+  z-index: 2;
   -webkit-transition: opacity 400ms ease-in;
   -moz-transition: opacity 400ms ease-in;
   transition: opacity 400ms ease-in;
   pointer-events: none;
+	padding: 10vh 0;
 	display: none;
-	overflow-y: scroll;
-}
-
-#project1:target {
-  display: flex;
-  pointer-events: auto;
 	justify-content: center;
 }
 
-.cliqshowcase {
-  max-width: 100%;
-	left: calc(50% - 200px);
-	height: auto;
-	width: 90vw;
+#project1:target, #project2:target, #project3:target {
+	display: flex;
+	pointer-events: auto;
 }
 
-.cliqthumbnail {
-	background-color: red;
-	-webkit-transition: border-width 200ms ease-in-out;
-	-moz-transition: border-width 200ms ease-in-out;
-	transition: border-width 200ms ease-in-out;
+.cliqshowcase, .critiqshowcase, .gravityshowcase {
+  width: 80%;
+	height: 80%;
+	z-index: 3
 }
 
-.cliqthumbnail:hover {
-	border-width: 0;
+.modalbackground{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 1;
 }
 
-/* --------------- project 2-------------- */
-
-#project2 {
-    position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 99998;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    pointer-events: none;
-		display: none;
-		overflow-y: scroll;
-}
-
-#project2:target {
-    display: flex;
-    pointer-events: auto;
-		justify-content: center;
-}
-
-.critiqshowcase {
-    max-width: 100%;
-		left: calc(50% - 200px);
-		height: auto;
-		width: 90vw;
-}
-
-/* --------------- project 3-------------- */
-
-#project3 {
-    position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 99998;
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: opacity 400ms ease-in;
-    pointer-events: none;
-		display: none;
-		overflow-y: scroll;
-}
-
-#project3:target {
-    display: flex;
-    pointer-events: auto;
-		justify-content: center;
-}
-
-.gravityshowcase {
-    max-width: 100%;
-		left: calc(50% - 200px);
-		height: auto;
-		width: 90vw;
-}
 
 /* --------------- original modal code -------------- */
 
