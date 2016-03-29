@@ -41,4 +41,7 @@
 	.tagline{
 		margin-top: 5vh;
 		font-size: 26px;
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
 }
