@@ -25,15 +25,100 @@
 
 /* --------------- work -------------- */
 
-.cliqthumbnail{
+.lineheightfix{
+	line-height: 0;
+	display: block;
+}
+
+.project-thumbnail{
 	width: 20vw;
 	height: auto;
 }
 
+.thumbnailcover{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	line-height: normal;
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-transition: opacity 0.2s ease-in-out; /* Safari */
+	-moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
 
-/* --------------- CLIQ -------------- */
+.thumbnailcover:hover{
+	opacity: 1;
+}
 
-.modalDialog {
+/* --------------- modal general -------------- */
+
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  top: 20px;
+  width: 24px;
+  font-weight: bold;
+}
+.close:hover {
+  background: #00d9ff;
+}
+
+/* --------------- project 1-------------- */
+
+#project1 {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 99998;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+	display: none;
+	overflow-y: scroll;
+}
+
+#project1:target {
+  display: flex;
+  pointer-events: auto;
+	justify-content: center;
+}
+
+.cliqshowcase {
+  max-width: 100%;
+	left: calc(50% - 200px);
+	height: auto;
+	width: 90vw;
+}
+
+.cliqthumbnail {
+	background-color: red;
+	-webkit-transition: border-width 200ms ease-in-out;
+	-moz-transition: border-width 200ms ease-in-out;
+	transition: border-width 200ms ease-in-out;
+}
+
+.cliqthumbnail:hover {
+	border-width: 0;
+}
+
+/* --------------- project 2-------------- */
+
+#project2 {
     position: fixed;
     font-family: Arial, Helvetica, sans-serif;
     top: 0;
@@ -47,36 +132,52 @@
     transition: opacity 400ms ease-in;
     pointer-events: none;
 		display: none;
+		overflow-y: scroll;
 }
-.modalDialog:target {
+
+#project2:target {
     display: flex;
     pointer-events: auto;
 		justify-content: center;
 }
 
-#openModal{
-	overflow-y: scroll;
-}
-
-.cliqshowcase {
+.critiqshowcase {
     max-width: 100%;
 		left: calc(50% - 200px);
 		height: auto;
 		width: 90vw;
 }
-.close {
-    background: #606061;
-    color: #FFFFFF;
-    line-height: 25px;
+
+/* --------------- project 3-------------- */
+
+#project3 {
     position: fixed;
-    right: 20px;
-    text-align: center;
-    top: 20px;
-    width: 24px;
-    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99998;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+		display: none;
+		overflow-y: scroll;
 }
-.close:hover {
-    background: #00d9ff;
+
+#project3:target {
+    display: flex;
+    pointer-events: auto;
+		justify-content: center;
+}
+
+.gravityshowcase {
+    max-width: 100%;
+		left: calc(50% - 200px);
+		height: auto;
+		width: 90vw;
 }
 
 /* --------------- original modal code -------------- */

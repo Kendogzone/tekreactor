@@ -20,6 +20,7 @@ time, mark, audio, video {
   box-sizing: border-box;
 	text-decoration: none;
 	list-style: none;
+	-webkit-font-smoothing: antialiased;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -86,14 +87,48 @@ li{
 }
 
 .light-grey{
-	color: #A9A9A9;
+	color: #8A8A8A;
 }
 
 .blue {
 	color: #0065FF;
 }
 
-/* --------------- Home -------------- */
+.white {
+	color: white;
+}
+
+/* --------------- grid -------------- */
+
+.grid-container{
+	display: flex;
+	flex-direction: column;
+}
+
+.grid-row{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.grid-item{
+	position: relative;
+}
+
+@media (min-width: 750px) {
+	.grid-container{
+	}
+
+	.grid-row{
+	}
+
+	.grid-item{
+
+	}
+
+}
+
+/* --------------- corners + main container -------------- */
 
 .corner-red{
 	width: 25vw;
@@ -123,12 +158,11 @@ li{
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	height: 100%;
 	justify-content: center;
 	padding: 16vh 8vw;
 }
 
-@media (min-width: 750px) and (-webkit-min-device-pixel-ratio: 2){
+@media (min-width: 750px){
 	.corner-red{
 		height:25vh;
 		width: auto;
@@ -163,8 +197,9 @@ li{
 .navitem{
 	padding: 10px;
 	color: #A9A9A9;
-	-webkit-transition: color 0.2s; /* Safari */
-  transition: color 0.2s;
+	-webkit-transition: color 0.2s ease-in; /* Safari */
+	-moz-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
 	margin: 0 3vw;
 }
 
@@ -182,8 +217,9 @@ li{
 .aboutbar, .workbar, .contactbar{
 	width: 50px;
 	opacity: 0;
-	-webkit-transition: opacity 0.2s; /* Safari */
-	transition: opacity 0.2s;
+	-webkit-transition: opacity 0.2s ease-in-out; /* Safari */
+	-moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .about:hover + .aboutbar, .work:hover + .workbar, .contact:hover + .contactbar{
