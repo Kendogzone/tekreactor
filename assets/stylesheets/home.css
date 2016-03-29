@@ -3,18 +3,16 @@
 .logo-m{
 	display: flex;
 	justify-content: center;
-	height: 90px;
 	margin-top: 10vh;
 }
 
 .logo-d{
 	display: none;
-	height: 50px;
 	margin-top: 20vh;
 }
 
 .logo-mobile{
-	height: 90px;
+	width: calc(100vw - 60px);
 }
 
 .logo-desktop{
@@ -24,7 +22,8 @@
 .tagline{
 	width: 100%;
 	text-align: center;
-	margin-top: 5vh;
+	margin-top: 4vh;
+	font-size: 18px;
 }
 
 @media (min-width: 750px){
@@ -36,6 +35,7 @@
 	.logo-d{
 		display: flex;
 		justify-content: center;
+		margin-top: calc(((100vh - 300px) / 2) - ((100vh - 575px) / 2));
 	}
 
 	.tagline{
