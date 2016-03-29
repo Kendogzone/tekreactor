@@ -190,7 +190,7 @@ li{
 	}
 
 	.section-1 {
-		padding: 16vh 15vw;
+		padding: calc((100vh - 575px) / 2) 15vw;
 	}
 
 }
